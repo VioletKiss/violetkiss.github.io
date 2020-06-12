@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,8 +16,12 @@
 
   <!-- 页面元数据 -->
   
-    <title>归档：2020 - Violetkiss&#39;s Blog</title>
+    <title>MySQL 根据日期 group by 统计数据并将时间不存在的记录补全（纯 sql ，不建表） - Violetkiss&#39;s Blog</title>
   
+    <meta name="keywords" content="MySQL">
+  
+  
+    <meta name="description" content="当需要统计连续时间的结果集的时候，比如说注册时间有一天没有用户注册，那么数据中便缺少了那一天的统计数据，这一天的数据可以通过代码解决，也可以使用建时间表的方法解决，当然也可以使用我下面的这个方法解决。">
   
 
   <!-- feed -->
@@ -86,91 +88,7 @@
 
 <body>
   
-  <div class="cover-wrapper">
-    
-      <cover class='cover  half'>
-        <div class='cover-body'>
-  <div class='a'>
-    
-    
-      <p class="title">VioletKiss's Blog</p>
-    
-    
-      <p class="subtitle">Carpe diem</p>
-    
-  </div>
-  <div class='b'>
-    
-      <div class="m_search">
-        <form name="searchform" class="form u-search-form">
-          <input type="text" class="input u-search-input" placeholder="" />
-          <i class="icon fas fa-search fa-fw"></i>
-        </form>
-      </div>
-    
-    <div class='menu navigation'>
-      <ul class='cover-list-h'>
-        
-          
-            <li>
-              <a class="nav home"
-                href="https://violetkiss.cn"
-                
-                
-                id="https:violetkisscn">
-                <i class='fas fa-home fa-fw fa-fw'></i>主页
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://github.com/VioletKiss"
-                
-                
-                id="https:githubcomVioletKiss">
-                <i class='fab fa-github fa-fw'></i>GitHub
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://www.facebook.com/profile.php?id=100009161219150"
-                
-                
-                id="https:wwwfacebookcomprofilephp?id=100009161219150">
-                <i class='fab fa-facebook fa-fw'></i>FaceBook
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://www.instagram.com/violetkiss95/"
-                
-                
-                id="https:wwwinstagramcomvioletkiss95">
-                <i class='fab fa-dribbble fa-fw'></i>Instagram
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://blog.csdn.net/q1119823309"
-                
-                
-                id="https:blogcsdnnetq1119823309">
-                <i class='fa fa-book fa-fw'></i>CSDN
-              </a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-</div>
-
-      </cover>
-    
-    <div id="loading-bar-wrapper">
+  <div id="loading-bar-wrapper">
   <div id="loading-bar"></div>
 </div>
 <header class="l_header shadow blur">
@@ -423,34 +341,18 @@
 
 <script>setLoadingBarProgress(40);</script>
 
-  </div>
 
 
-  <div class="l_body">
+  <div class="l_body nocover">
     <div class='body-wrapper'>
       
 
 <div class='l_main'>
-	
-		
-  <section class="post-list ">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
   
+
+  
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -460,123 +362,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/2020/06/12/%E5%A6%82%E4%BD%95%E5%86%99%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E7%AE%A1%E7%90%86%E7%9A%84%20Java%20%E7%A8%8B%E5%BA%8F/">
-      如何写一个用户账户密码生成管理的 Java 程序
-    </a>
-  </h2>
-
-
-        
-        <div class='new-meta-box'>
-          
-            
-          
-            
-              
-<div class='new-meta-item author'>
-  <a href="" rel="nofollow">
-    <img src="https://violetkiss.cn/imgHosting/blog/avatar.jpg">
-    <p>VioletKiss</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/Java/' rel="nofollow">
-      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>Java</p>
-    </a>
-  </div>
-
-
-            
-          
-            
-              <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年6月12日</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：382字</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1分钟</p>
-    </a>
-  </div>
-
-
-            
-          
-            
-              
-
-            
-          
-        </div>
-        
-          <hr>
-        
-      </div>
-    
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>写一个放在 U 盘里的密码生成记录管理工具</p>
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/2020/06/12/%E5%A6%82%E4%BD%95%E5%86%99%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E7%AE%A1%E7%90%86%E7%9A%84%20Java%20%E7%A8%8B%E5%BA%8F/">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
-  
-
-
-  <section class='meta'>
-    
-      
-      
-      <div class="meta" id="header-meta">
-        
-          
-  <h2 class="title">
+  <h1 class="title">
     <a href="/2020/06/12/MySQL%20%E6%A0%B9%E6%8D%AE%E6%97%A5%E6%9C%9F%20group%20by%20%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B0%86%E6%97%B6%E9%97%B4%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AE%B0%E5%BD%95%E8%A1%A5%E5%85%A8%EF%BC%88%E7%BA%AF%20sql%20%EF%BC%8C%E4%B8%8D%E5%BB%BA%E8%A1%A8%EF%BC%89/">
       MySQL 根据日期 group by 统计数据并将时间不存在的记录补全（纯 sql ，不建表）
     </a>
-  </h2>
+  </h1>
 
 
         
@@ -620,6 +410,11 @@
           
             
               
+
+            
+          
+            
+              
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
@@ -636,11 +431,6 @@
 
             
           
-            
-              
-
-            
-          
         </div>
         
           <hr>
@@ -650,151 +440,269 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>当需要统计连续时间的结果集的时候，比如说注册时间有一天没有用户注册，那么数据中便缺少了那一天的统计数据，这一天的数据可以通过代码解决，也可以使用建时间表的方法解决，当然也可以使用我下面的这个方法解决。</p>
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/2020/06/12/MySQL%20%E6%A0%B9%E6%8D%AE%E6%97%A5%E6%9C%9F%20group%20by%20%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B0%86%E6%97%B6%E9%97%B4%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AE%B0%E5%BD%95%E8%A1%A5%E5%85%A8%EF%BC%88%E7%BA%AF%20sql%20%EF%BC%8C%E4%B8%8D%E5%BB%BA%E8%A1%A8%EF%BC%89/">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <p>当需要统计连续时间的结果集的时候，比如说注册时间有一天没有用户注册，那么数据中便缺少了那一天的统计数据，这一天的数据可以通过代码解决，也可以使用建时间表的方法解决，当然也可以使用我下面的这个方法解决。</p>
+<a id="more"></a>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>最近同事需要一个根据时间聚合统计数据的查询结果集，并且最好是可以把没有记录的日期也可以补全，我搜索了一下只找到说建立一个日期表然后联表查询方法，但是多一张没用的表，太不优雅了，所以我打算自己试试写一条sql尝试将结果查询出来。</p>
+<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>由于需要连续的日期，我们想到可以通过MySQL的DATE_ADD或DATE_SUB来获得。那么函数中的type固定用DAY，但是expr我们怎么生成呢？这时候我们就可以设置一个变量不断递增来获取我们需要天数的日期，这样连续的日期就完成了，然后我们联合根据时间 group by 查询出来的结果集查询即可。</p>
+<h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><p>有一张 user 表，有 user_id 和 create_time 两个字段，模拟查询每天注册人数，暂定查询今天起往前20天（示例简单为主，具体需求可各自扩展）</p>
+<ol>
+<li>根据时间聚合查出结果集</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	DATE( u.create_time ) AS create_time,</span><br><span class="line">	count( u.user_id ) AS total</span><br><span class="line">FROM</span><br><span class="line">	&#96;user&#96; u </span><br><span class="line">GROUP BY</span><br><span class="line">	DATE( u.create_time )</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>连续时间查询的结果集</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SET @i :&#x3D;- 1;</span><br><span class="line">SELECT</span><br><span class="line">	date_format( DATE_SUB( NOW( ), INTERVAL ( @i :&#x3D; @i + 1 ) DAY ), &#39;%Y-%m-%d&#39; ) AS &#96;time&#96; </span><br><span class="line">FROM</span><br><span class="line">	(SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6) xc1, </span><br><span class="line">		(SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6) xc2</span><br><span class="line">WHERE</span><br><span class="line">		@i &lt;&#x3D; 30</span><br></pre></td></tr></table></figure>
+<p>sql 解释：(SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6) 这里表示 6 次，FROM 两遍根据笛卡尔积生成 6 X 6 次，所以最大会连续到36，注意设置的 @i 查询的天数要小于等于 36 ，如果要查询40，则根据数量在后面其中一条后 UNION 7，则为 6 X 7 = 42 次，即可，其他数量自行修改。</p>
+</li>
+<li><p>联合 1 和 2 两个结果集的数据 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">SET @i :&#x3D;- 1;</span><br><span class="line">SELECT</span><br><span class="line">	x.&#96;time&#96;,</span><br><span class="line">-- 	IFNULL( d.create_time, x.&#96;time&#96; ) AS &#96;create_time&#96;,</span><br><span class="line">	IFNULL( d.total, 0 ) AS total</span><br><span class="line">FROM</span><br><span class="line">	(</span><br><span class="line">	SELECT</span><br><span class="line">		date_format( DATE_SUB( NOW( ), INTERVAL ( @i :&#x3D; @i + 1 ) DAY ), &#39;%Y-%m-%d&#39; ) AS &#96;time&#96; </span><br><span class="line">	FROM</span><br><span class="line">		(SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6) xc1, </span><br><span class="line">			(SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6) xc2</span><br><span class="line">	WHERE</span><br><span class="line">		@i &lt;&#x3D; 30 </span><br><span class="line">	) x</span><br><span class="line">	LEFT JOIN </span><br><span class="line">	(</span><br><span class="line">	SELECT</span><br><span class="line">		DATE( u.create_time ) AS create_time,</span><br><span class="line">		count( u.user_id ) AS total</span><br><span class="line">	FROM</span><br><span class="line">		&#96;user&#96; u </span><br><span class="line">	GROUP BY</span><br><span class="line">		DATE( u.create_time ) </span><br><span class="line">	) d ON TO_DAYS( x.&#96;time&#96; ) &#x3D; TO_DAYS( DATE( d.create_time ) ) </span><br><span class="line">ORDER BY</span><br><span class="line">	x.&#96;time&#96;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><p>在最终语句中：</p>
+<ol>
+<li>NOW() 可以替换成你想要的任意时间；</li>
+<li>DATE_SUB 表示从 NOW() 时间起往前多少天的连续日期，如果需要往后的连续日期，改为 DATE_ADD 即可。</li>
+<li>在获得连续日期的语句中，WHERE 条件中的 <code>@i &lt;= 20</code> 表示连续 20 天的日期，数值可自定义，选择自己想要查询的连续时间范围。</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>确定好自己想要的结果形式，然后慢慢补全，直至获得最终的结果，利用分治法的思想，把一个大问题分解成几个小问题，一步一步解决，最终得出大问题的解。</p>
+
+          
+            <div class='article_footer'>
+              
+                
+  
+    
+    
+
+
+
   
 
-
-  <section class='meta'>
-    
-      
-      
-      <div class="meta" id="header-meta">
-        
-          
-  <h2 class="title">
-    <a href="/2020/06/12/MyBatis%20%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E7%9A%84%E6%96%B9%E5%BC%8F%E6%89%A7%E8%A1%8C%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%B9%B6%E8%8E%B7%E5%8F%96%E8%BF%94%E5%9B%9E%E5%80%BC/">
-      MyBatis 使用注解的方式执行存储过程并获取返回值
-    </a>
-  </h2>
-
-
-        
-        <div class='new-meta-box'>
-          
-            
-          
-            
-              
-<div class='new-meta-item author'>
-  <a href="" rel="nofollow">
-    <img src="https://violetkiss.cn/imgHosting/blog/avatar.jpg">
-    <p>VioletKiss</p>
-  </a>
-</div>
-
-            
-          
-            
-              
   
-  <div class='new-meta-item category'>
-    <a href='/categories/Mybatis/' rel="nofollow">
-      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>Mybatis</p>
-    </a>
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=https://violetkiss.cn/2020/06/12/MySQL%20%E6%A0%B9%E6%8D%AE%E6%97%A5%E6%9C%9F%20group%20by%20%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B0%86%E6%97%B6%E9%97%B4%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AE%B0%E5%BD%95%E8%A1%A5%E5%85%A8%EF%BC%88%E7%BA%AF%20sql%20%EF%BC%8C%E4%B8%8D%E5%BB%BA%E8%A1%A8%EF%BC%89/>https://violetkiss.cn/2020/06/12/MySQL%20%E6%A0%B9%E6%8D%AE%E6%97%A5%E6%9C%9F%20group%20by%20%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B0%86%E6%97%B6%E9%97%B4%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AE%B0%E5%BD%95%E8%A1%A5%E5%85%A8%EF%BC%88%E7%BA%AF%20sql%20%EF%BC%8C%E4%B8%8D%E5%BB%BA%E8%A1%A8%EF%BC%89/</a></p>
+          
+        
+      </blockquote>
+    
   </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget qrcode  desktop mobile">
+  
+
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://violetkiss.cn/imgHosting/blog/donate_wechat.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://violetkiss.cn/imgHosting/blog/donate_alipay.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
 
 
-            
+              
+            </div>
           
-            
-              <div class="new-meta-item date">
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-06-12T16:29:22+08:00">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年6月12日</p>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年6月12日</p>
   </a>
 </div>
 
-            
-          
-            
-              
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：319字</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1分钟</p>
-    </a>
-  </div>
-
-
-            
-          
-            
-              
-
-            
-          
-        </div>
         
-          <hr>
-        
-      </div>
-    
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
       
-        <p>阿里规范不建议使用存储过程，当不得不使用存储过程时可以参考该教程</p>
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MySQL/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>MySQL</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://violetkiss.cn/2020/06/12/MySQL%20%E6%A0%B9%E6%8D%AE%E6%97%A5%E6%9C%9F%20group%20by%20%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B0%86%E6%97%B6%E9%97%B4%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AE%B0%E5%BD%95%E8%A1%A5%E5%85%A8%EF%BC%88%E7%BA%AF%20sql%20%EF%BC%8C%E4%B8%8D%E5%BB%BA%E8%A1%A8%EF%BC%89/&title=MySQL 根据日期 group by 统计数据并将时间不存在的记录补全（纯 sql ，不建表） - Violetkiss's Blog&summary=当需要统计连续时间的结果集的时候，比如说注册时间有一天没有用户注册，那么数据中便缺少了那一天的统计数据，这一天的数据可以通过代码解决，也可以使用建时间表的方法解决，当然也可以使用我下面的这个方法解决。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://violetkiss.cn/2020/06/12/MySQL%20%E6%A0%B9%E6%8D%AE%E6%97%A5%E6%9C%9F%20group%20by%20%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B0%86%E6%97%B6%E9%97%B4%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AE%B0%E5%BD%95%E8%A1%A5%E5%85%A8%EF%BC%88%E7%BA%AF%20sql%20%EF%BC%8C%E4%B8%8D%E5%BB%BA%E8%A1%A8%EF%BC%89/&title=MySQL 根据日期 group by 统计数据并将时间不存在的记录补全（纯 sql ，不建表） - Violetkiss's Blog&summary=当需要统计连续时间的结果集的时候，比如说注册时间有一天没有用户注册，那么数据中便缺少了那一天的统计数据，这一天的数据可以通过代码解决，也可以使用建时间表的方法解决，当然也可以使用我下面的这个方法解决。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://violetkiss.cn/2020/06/12/MySQL%20%E6%A0%B9%E6%8D%AE%E6%97%A5%E6%9C%9F%20group%20by%20%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B0%86%E6%97%B6%E9%97%B4%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AE%B0%E5%BD%95%E8%A1%A5%E5%85%A8%EF%BC%88%E7%BA%AF%20sql%20%EF%BC%8C%E4%B8%8D%E5%BB%BA%E8%A1%A8%EF%BC%89/&title=MySQL 根据日期 group by 统计数据并将时间不存在的记录补全（纯 sql ，不建表） - Violetkiss's Blog&summary=当需要统计连续时间的结果集的时候，比如说注册时间有一天没有用户注册，那么数据中便缺少了那一天的统计数据，这一天的数据可以通过代码解决，也可以使用建时间表的方法解决，当然也可以使用我下面的这个方法解决。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
       
     </div>
-    
-      
-        <div class="button readmore">
-          <a href="/2020/06/12/MyBatis%20%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E7%9A%84%E6%96%B9%E5%BC%8F%E6%89%A7%E8%A1%8C%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%B9%B6%E8%8E%B7%E5%8F%96%E8%BF%94%E5%9B%9E%E5%80%BC/">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
   </section>
-</article>
 
+
+        
+        
+          <div class="prev-next">
+            
+              <a class='prev' href='/2020/06/12/%E5%A6%82%E4%BD%95%E5%86%99%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E7%AE%A1%E7%90%86%E7%9A%84%20Java%20%E7%A8%8B%E5%BA%8F/'>
+                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>如何写一个用户账户密码生成管理的 Java 程序</p>
+                <p class='content'>写一个放在 U 盘里的密码生成记录管理工具
+
+
+项目目的借助自己写的这个小项目可以更理解 Java ，从而自省自己，发现自己的不足才能进步。
+项目功能
+根据用户输入的信息生成16位密码，并且记录...</p>
+              </a>
+            
+            
+              <a class='next' href='/2020/06/12/MyBatis%20%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E7%9A%84%E6%96%B9%E5%BC%8F%E6%89%A7%E8%A1%8C%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E5%B9%B6%E8%8E%B7%E5%8F%96%E8%BF%94%E5%9B%9E%E5%80%BC/'>
+                <p class='title'>MyBatis 使用注解的方式执行存储过程并获取返回值<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>阿里规范不建议使用存储过程，当不得不使用存储过程时可以参考该教程
+
+
+开始通过搜索引擎搜索了获取返回值的 MyBatis 注解配置方式，但是都搜索不到，都是 xml 配置方式，尝试自己写出来了。...</p>
+              </a>
+            
           </div>
         
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
       
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
+      
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+          </div>
+        </section>
+      
+      
+    </section>
+  </article>
+
 
   
 
 
-	
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'MySQL 根据日期 group by 统计数据并将时间不存在的记录补全（纯 sql ，不建表）',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class='l_side'>
   
@@ -857,58 +765,19 @@
   
     
     
-  
 
-  <section class="widget category shadow desktop">
+
+  <section class="widget toc-wrapper shadow desktop mobile">
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java/" href="/categories/Java/"
-            id="categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/MySQL/" href="/categories/MySQL/"
-            id="categoriesMySQL"
-            ><div class='name'>MySQL</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Mybatis/" href="/categories/Mybatis/"
-            id="categoriesMybatis"
-            ><div class='name'>Mybatis</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Java/" style="font-size: 14px; color: #999">Java</a> <a href="/tags/MySQL/" style="font-size: 14px; color: #999">MySQL</a> <a href="/tags/Mybatis/" style="font-size: 14px; color: #999">Mybatis</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/" style="font-size: 14px; color: #999">存储过程</a>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#开始"><span class="toc-text">开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#思考"><span class="toc-text">思考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实践"><span class="toc-text">实践</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扩展"><span class="toc-text">扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
     </div>
   </section>
 
@@ -1031,14 +900,6 @@ setInterval("createtime()",250);
 </script>
 
 
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
-
-
       <script>setLoadingBarProgress(60);</script>
     </div>
     <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
@@ -1151,6 +1012,60 @@ setInterval("createtime()",250);
 
 
 
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
+
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var meta = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick','mail','link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function(item){
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+  var valine = new Valine();
+  function emoji(path, idx, ext) {
+      return path + "/" + path + "-" + idx + "." + ext;
+  }
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  valine.init({
+    el: '#valine_container',
+    meta: meta,
+    
+    appId: "gJfPHRz2pbzEiFos2X3u5GWM-gzGzoHsz",
+    appKey: "KOsJSQM7HRUVcz0TY6FUay6l",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'robohash',
+    lang:'zh-cn',
+    visitor: 'true',
+    highlight: 'true',
+    mathJax: 'false',
+    enableQQ: 'true',
+    requiredFields: requiredFields,
+    emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
+    emojiMaps: emojiMaps
+  })
+  </script>
 
 
 
